@@ -12,10 +12,36 @@ html{
 	height:50em;
 }
 
+#content-pedido{
+	margin-top:2em;
+	margin-left:32%;
+}
+
+#form-pedido{
+	margin-top:-3em;
+}
+
 .item-menu{
 	width:15em;
 	border: 0.5em solid #Fa0;
 	border-radius: 50%;
+}
+
+.link-generico{
+	color:#000;
+	font-family: "Roboto", sans-serif;
+	font-size:1em;
+}
+
+.link-generico:hover{
+	color:#Fa0;
+	font-family: "Roboto", sans-serif;
+	font-size:1em;
+}
+
+#contato{
+	margin-left:25%;
+	margin-top:2em;
 }
 
 #link-local{
@@ -388,4 +414,51 @@ a.before:hover:before,a.after:hover:after{
 }
 .container .info span .fa {
   color: #EF3B3A;
+}
+
+
+.form-style-1 {
+    margin:10px auto;
+    max-width: 400px;
+    padding: 20px 12px 10px 20px;
+    font: 13px "Roboto", sans-serif;
+}
+.form-style-1 li {
+    padding: 0;
+    display: block;
+    list-style: none;
+    margin: 10px 0 0 0;
+}
+.form-style-1 label{
+    margin:0 0 3px 0;
+    padding:0px;
+    display:block;
+    font-weight: bold;
+}
+select{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border:1px solid #BEBEBE;
+    padding: 7px;
+    margin:0px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;  
+}
+.form-style-1 .field-divided{
+    width: 49%;
+}
+
+.form-style-1 .field-long{
+    width: 100%;
+}
+.form-style-1 .field-select{
+    width: 100%;
+}
+.form-style-1 .field-textarea{
+    height: 100px;
+}:red;
 }
