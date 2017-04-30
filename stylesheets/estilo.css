@@ -1,0 +1,391 @@
+@font-face {
+    font-family: 'MedievalSharp';
+    src: url(../fonts/MedievalSharp.ttf);
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+html{
+	background-color:#FFDDDD;
+	background-repeat:no;
+	height:50em;
+}
+
+.item-menu{
+	width:15em;
+	border: 0.5em solid #Fa0;
+	border-radius: 50%;
+}
+
+#link-local{
+	color:#000;
+}
+
+#copyright{
+	position:absolute;
+	margin-left:40%;
+	font-family:Verdana;
+	font-size:0.8em;
+	color:#aaaaaa;
+}
+
+#cartoes{
+	padding-left: 90%;
+}
+
+#seupedido{
+	position:absolute;
+	margin-left:75%;
+}
+
+#texto-pedido{
+	padding-left:3em;
+	font-family:Verdana;
+	font-size:0.8em;
+	color:#FFFFFF;
+}
+
+#pedido{
+	position:relative;
+	color:#FFFFFF;
+	font-size:0.8em;
+	background-color:#000;
+	font-family:Verdana;
+	padding:0.5em;
+}
+
+#moto{
+	margin-top:-0.3em;
+	position:absolute;
+	width:2em;	
+}
+
+#helmet-left{
+	opacity: 0.7;
+	margin-top:1em;
+	position:absolute;
+	height:8em;
+	
+}
+#helmet-right{
+	opacity: 0.7;
+	margin-top:1em;
+	position:absolute;
+	height:8em;
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+	margin-left:91.5%
+}
+
+#cabecalho{
+	height:10em;
+	background-color:#FFA600;
+	opacity: 0.8;
+	
+}
+
+#hamburguer-logo{
+	height:8em;
+	top:7px;
+	position:absolute;
+	margin-left:45%
+}
+
+h1{
+	font-size:42px;
+	font-family: 'MedievalSharp';
+	color: #222222;
+	text-align:center;
+	position:absolute;
+	margin-left:32.5%;
+	margin-top:2.7em;
+}
+h2{
+	font-size:36px;
+	font-family:'MedievalSharp';
+	color:#222222;
+	display:inline;
+
+}
+
+h3{
+	font-family: 'MedievalSharp';
+	font-size: 24px;
+	font-weight: bold;
+	color:#333;
+}
+
+.burg{
+	position:absolute;
+}
+.desc-burg{
+	position:absolute;
+	margin-top:3em;
+	padding-left:2em;
+}
+
+.hamburguer-foto{
+	width:50em;
+}
+
+.burg-container{
+	margin-left:5em;
+	margin-top:1em;
+}
+
+
+#links{
+	margin-top:1em;
+	font-family: 'Verdana';
+	font-size: 14px;
+	color:#333;
+	padding-left:15em;
+	padding-right:15em;
+	max-width:100%;
+	position:relative;
+	margin-left:20%;
+}
+
+#imagens{
+	margin-top:1em;
+	background-color: rgba(0, 0, 0, 0.9);
+	font-family: 'Verdana';
+	font-size: 14px;
+	color:#333;
+	padding-top:15px;
+	padding-left:15em;
+	padding-right:15em;
+	padding-bottom:15px;
+	max-width:100%;
+	border: 1px solid #aac0ae;
+	line-height: 200%;
+	position:relative;
+}
+
+footer{
+	padding-top: 2em;
+	padding-bottom: 25px;
+}
+
+
+
+#lateral{
+	margin-top:7.75em;
+	position: absolute;
+	top:7px;
+	height:100%;
+	width:7.5em;
+
+}
+
+#cardapio{
+	font-family: 'Verdana';
+	color: #333;
+	font-weight: bold;
+	font-size: 48px;
+	position: relative;
+	top:290px;
+	left:-170px;
+	transform: rotate(-90deg);
+	
+}
+p{
+	display:inline;
+	text-decoration:none;
+	color:Coral;
+	font-size:1.5em;
+}
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+}
+
+a,a:visited,a:hover,a:active{
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+	position:relative;
+  transition:0.5s color ease;
+	text-decoration:none;
+	color:Coral;
+	font-size:1.5em;
+	font-family:'MedievalSharp';
+}
+a:hover{
+	color:#d73444;
+}
+a.before:before,a.after:after{
+  content: "";
+  transition:0.5s all ease;
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+  position:absolute;
+}
+a.before:before{
+  top:-0.25em;
+}
+a.after:after{
+  bottom:-0.25em;
+}
+a.before:before,a.after:after{
+  height:5px;
+  height:0.35rem;
+  width:0;
+  background:#d73444;
+}
+a.third:after,a.sixth:before,a.sixth:after{
+  left:50%;
+  -webkit-transform:translateX(-50%);
+          transform:translateX(-50%);
+}
+a.before:hover:before,a.after:hover:after{
+  width:100%;
+}
+
+
+.login-page {
+  width: 360px;
+  padding: 2% 0 0;
+  margin-left:34%;
+}
+.form {
+  position: relative;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 2em;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 1em;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #FFA600;
+  width: 70%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+
+}
+
+.general-button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #FFA600;
+  width: 20%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  position:absolute;
+  margin-top:10em;
+  margin-left:3.5em;
+
+}
+
+.general-button:hover,.form button:active,.form button:focus {
+  background: #FFCC00;
+}
+
+#button-fb{
+  width: 25%;
+  height:3em;
+  padding: 15px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  background:url(../images/facebook-logo.png);
+  background-size: 5em 3em;
+}
+
+.form button:hover,.form button:active,.form button:focus {
+  background: #FFCC00;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #FFA600;
+  text-decoration: none;
+  font-family:"Roboto", sans-serif;
+  font-size:1.25em;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}l
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
